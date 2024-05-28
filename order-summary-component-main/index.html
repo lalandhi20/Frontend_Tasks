@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  @media screen and (min-width: 1024px) {
+    body{
+      background-image: url("images/pattern-background-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: hsl(225, 100%, 94%);
+    }
+    .box{
+      width:25%;
+      height:576px;
+      background-color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 15px;
+      text-align: center;
+      font-family: "Red Hat Display";
+      justify-content: center;
+    }
+    img{
+      width: 100%;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    h2{
+      font-weight: 700;
+      color: hsl(223, 47%, 23%);
+    }
+    p{
+      color: hsl(224, 23%, 55%);
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .container{
+      width: 74%;
+      height: 75px;
+      background-color: hsl(225, 100%, 98%);
+      margin-left: 13%;
+      margin-right: 13%;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .button{
+      width: 74%;
+      height: 36px;
+      border-radius: 10px;
+      margin-left: 13%;
+      margin-right: 13%;
+      text-align: center;
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      font-size: small;
+      font-weight: 500;
+      box-shadow: 0px 17.5px 10px hsl(225, 100%, 94%);
+    }
+    .center {
+      padding: 9px 0;
+      text-align: center;
+}
+.cancel{
+  font-size: smaller;
+      font-weight: 700;
+      color: grey;
+}
+.aligncenter{
+      padding: 13px 20px;
+      font-size: small;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      
+}
+.padding{
+  padding-left: 44px;
+}
+}
+@media screen and (max-width: 430px) {
+  body{
+      background-color: hsl(225, 100%, 94%);
+    }
+    .box{
+      width:80%;
+      height:576px;
+      background-color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 15px;
+      text-align: center;
+      font-family: "Red Hat Display";
+      justify-content: center;
+    }
+    img{
+      width: 100%;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    h2{
+      font-weight: 700;
+      color: hsl(223, 47%, 23%);
+    }
+    p{
+      color: hsl(224, 23%, 55%);
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .container{
+      width: 74%;
+      height: 75px;
+      background-color: hsl(225, 100%, 98%);
+      margin-left: 13%;
+      margin-right: 13%;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .button{
+      width: 74%;
+      height: 36px;
+      border-radius: 10px;
+      margin-left: 13%;
+      margin-right: 13%;
+      text-align: center;
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      font-size: small;
+      font-weight: 500;
+      box-shadow: 0px 17.5px 10px hsl(225, 100%, 94%);
+    }
+    .center {
+      padding: 9px 0;
+      text-align: center;
+}
+.cancel{
+  font-size: smaller;
+      font-weight: 700;
+      color: grey;
+}
+.aligncenter{
+      padding: 13px 20px;
+      font-size: small;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      
+}
+.padding{
+  padding-left: 20px;
+}
+}
+    
+  </style>
+</head>
+<body>
+  <div class="box">
+      <img src = "images/illustration-hero.svg">
+      <br>
+      <br>
+      <h2>Order Summary</h2>
+
+    <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+    device anywhere you like!</p>
+
+    <div class = "container">
+      <div class = "aligncenter">
+        <div><img src = "images/icon-music.svg"></div>
+        <div style="padding-top: 7px; padding-left: 15px;color: hsl(223, 47%, 23%);font-weight: 700;">
+        Annual Plan<br>
+        <span style="color: grey;font-weight:100;font-size: small;">$59.99/year</span>
+        </div>
+        <div class=" padding" style="padding-top: 15px;color: hsl(245, 75%, 52%);font-weight: 500;text-decoration: underline">Change</div>
+      </div>
+      
+    </div>
+    <br>
+    <div class="button">
+      <div class =" center">Proceed to Payment</div>
+    </div>
+    <br>
+    <div class= "cancel" >Cancel Order</div>
+  </div>
+</body>
+</html>
